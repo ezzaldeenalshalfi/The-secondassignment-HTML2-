@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The backed Goods</title>
+</head>
+<body style="background-color: #e8c588; margin:0 10%">
+    <h1 
+    style="
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom:1px solid #57b1dc;
+    margin-top: 30px;
+    display: block;">The backed Goods</h1>
+   
+   <p style="
+    text-align:center;
+    font-size:15px;">
+        -We start our day at the crack of dawn</> to bake our 
+         own muffins, bread, and dinner rolls Loaves not
+         used that day are donated to the local food shelter.</p>
+        <img src="fish.jpg" alt="no image" class="good">
+
+
+        <style>
+            .good{
+                position: absolute;
+                left:20%;
+                width:60%;
+                margin-top: 10px;
+                font-display: block;
+            }
+        </style>
+</body>
+<footer>
+    <div class="book">
+         
+        <a class="but" href="http://127.0.0.1:5500/index.html"`>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home
+        </a>
+        <a  class="but" href="http://127.0.0.1:5500/second.html"> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Next
+        </a>
+    </div>
+
+    <style>
+        .book{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-grow: wrap;
+            gap: 200px;
+            background-color:none;
+            font-size:10px; 
+        }
+        .but{
+            position: relative;
+            padding: 30px 30px;
+            font-size: 1.5rem;
+            color:#b37304;
+            border: 2px solid rgba(0,0,0,0);
+            border-radius: 4px;
+            text-shadow:0 0 15px var(--color);
+            text-decoration:#e0a235;
+            text-transform: uppercase;
+            background-color:none;
+            letter-spacing:(0.1rem);
+            transition:0.5s;
+            z-index:1;
+        }
+
+        .but:hover
+        {
+            color:black;
+            border: 2px solid rgb(0, 0,0,0);
+            box-shadow: 0 0 0px var(--color);
+
+        }
+        .but::before
+        {
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 100px;
+            width: 100%;
+            height: 100%;
+            background: var(--color);
+            z-index:-1;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+
+        .hover::after
+        {
+            transform: scale(4);
+            transition:delay(0.5s);
+            box-shadow: 0 0 10px var(--color),
+            text-sha
+            0 0 30px var(--color),
+            0 0 60px var(--color);
+
+        }
+    </style>
+
+</footer>
+
+</html>
